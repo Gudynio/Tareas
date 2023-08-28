@@ -1,6 +1,5 @@
 //Variables
-$medium-size: 768px;
-$large-size: 1024px;
+@import "_cv_variables.scss";
 
 @media only screen and (min-width: 0px){
     .Technologies-div{
@@ -44,18 +43,24 @@ $large-size: 1024px;
     }
 }
 
+@mixin div{
+    border-radius: 6px;
+}
+
+td {
+    width: 50%;
+}
+
 .Technologies-div{
     float: left;
 }
 
-
-
 body {
-    background-color: antiquewhite;
+    background-color: $background;
 }
 
 a {
-    color: black;
+    color: $letra;
     text-decoration: none;
 }
 
@@ -63,18 +68,17 @@ a {
     margin: 20px;
 }
 
-table {
-    margin: 0 auto;
-    width: 70%;
-    text-align: center;
-    background-color:bisque;
-}
-
-
-td{
-    width: 50%;
-}
-
 .center{
     text-align: center;
 }
+
+table {
+    @extend .center;
+    margin: 0 auto;
+    width: 70%;
+    background-color: $table-background;
+}
+
+
+
+
