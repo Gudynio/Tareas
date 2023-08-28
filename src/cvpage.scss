@@ -1,0 +1,80 @@
+//Variables
+$medium-size: 768px;
+$large-size: 1024px;
+
+@media only screen and (min-width: 0px){
+    .Technologies-div{
+        width: 100%;
+    }
+    img{
+        height: 100px;
+    }
+}
+
+@media only screen and (min-width: $medium-size){
+    div {
+        width: 100%;
+    }
+    img{
+        height: 200px;
+    }
+    .dropdown{
+        visibility: visible;
+    }
+    .pc{
+        visibility: hidden;
+    }
+    .Technologies-div{
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: $large-size){
+    img{
+        height: 500px;
+    }
+    .dropdown{
+        visibility: hidden;
+    }
+    .pc{
+        visibility: visible;
+    }
+    .Technologies-div{
+        width: 25%;
+    }
+}
+
+.Technologies-div{
+    float: left;
+}
+
+
+
+body {
+    background-color: antiquewhite;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+#div-nav{
+    margin: 20px;
+}
+
+table {
+    margin: 0 auto;
+    width: 70%;
+    text-align: center;
+    background-color:bisque;
+}
+
+
+td{
+    width: 50%;
+}
+
+.center{
+    text-align: center;
+}
